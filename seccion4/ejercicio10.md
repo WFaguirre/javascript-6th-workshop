@@ -54,11 +54,19 @@ Promise.resolve()
 //Paso 2 Posteriormente es imprimida
 console.log("Fin del script");
 
+
+¿Qué tareas se consideran macrotareas y cuáles son microtareas?
 //"Inicio del script", "Final del script", .then y su mensaje y los setTimeOuts se consideran Macrotareas!!
 //Las multiples opciones .then dentro de la ultima promesa, hacen parte de unas microtareas
 
+
+¿Cómo se relacionan las macrotareas y microtareas con el event loop?
 //Tanto macrotareas y microtarea se relacionan en el Eventloop, por que todas entran a una cola de espera mientras Javascript compila
 
+
+¿Qué sucede cuando una microtarea genera una nueva macrotarea dentro de ella?
 //La microtarea entra a un cola y le da la oportunidad a la macrotarea para que pase all callstack
 
+
+¿Cómo se manejan las promesas y los setTimeout en relación con el event loop?
 //Corren a una cola de microtarea, y posteriormente pasan a un callstack los setTimeout, posteriomente pasan los otro setTimeout a macrotarea
